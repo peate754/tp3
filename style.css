@@ -1,0 +1,157 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    padding: 1px 0;
+}
+
+header img {
+    max-width: 50%;
+    height: auto;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#map { height: 500px; }
+
+.marker-red {
+    width: 20px;
+    height: 5px;
+    background-color: red;
+    display: inline-block;
+}
+
+.marker-purple {
+    width: 20px;
+    height: 5px;
+    background-color: purple;
+    display: inline-block;
+}
+
+.marker-blue {
+    width: 20px;
+    height: 5px;
+    background-color: green;
+    display: inline-block;
+}
+
+.marker-green {
+    width: 20px;
+    height: 20px;
+    background-image: url("icone.png");
+    background-size: cover;
+    display: inline-block;
+}
+
+.legend {
+    background-color: #fff; /* Couleur de fond de la légende */
+    padding: 10px; /* Marge intérieure pour espacer le contenu de la légende */
+    border: 1px solid #ccc; /* Bordure autour de la légende */
+    border-radius: 5px; /* Rayon de la bordure pour arrondir les coins */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour la légende */
+    color: #333;
+}
+
+.custom-label {
+    font-size: 14px;
+    font-weight: bold;
+    color:yellowgreen; /* Couleur du texte bleu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    white-space: nowrap; /* Empêcher le texte de se diviser sur plusieurs lignes */
+    
+}
+
+
+
+.leaflet-control-title h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.leaflet-control-title {
+    position: absolute;
+    top: auto;
+    left: -40em;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+.layer-control {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.trench-control h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.trench-control input[type="checkbox"] {
+    margin-right: 5px;
+}

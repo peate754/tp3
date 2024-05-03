@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- donner pour info -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <!-- Leaflet Legend CSS -->
+    <link rel="stylesheet" href="src/leaflet.legend.css" />
+    
+    <!-- Leaflet Legend JavaScript -->
+    <script type="text/javascript" src="src/leaflet.legend.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="L.CégepLimoilou_1cHor [Converti].png" alt="Logo du Cégep" class="img-fluid">
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#a-propos">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Des Volcans en Beauce?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="map" class="container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"></script>
+    <script src="script.js"></script>
+
+    <main class="container">
+        <section id="accueil">
+            <h2>Accueil</h2>
+            <p>Bienvenue sur le site web du Cégep! Ce site est créé par le seul, unique, magnifique et splendide Pierre Alexandre Tremblay.</p>
+        </section>
+        <section id="a-propos">
+            <h2>Volcan actif en Beauce</h2>
+            <p>La Beauce est une région géologiquement stable et il n'y a pas de volcan actif en Beauce.</p>
+        </section>
+        <section id="services">
+            <h2>Nos Services</h2>
+            <p>Nous offrons une variété de services pour nos étudiants.</p>
+        </section>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <p class="text-muted">Copyright © 2024 Cégep. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
